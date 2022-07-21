@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="heading">
+        <h1>Weather App</h1>
+    </div>
+
+    <div class="data">
+        <% if(cod==200){ %>
+            <% if(flag === "true"){ %>
+                <h2>City Name = <%=City%></h2>
+                <h4>Temperature = <%= temp %> &#8451;.</h4>
+                <h4>Description = <%= description %></h4>
+                <h4>Wind speed = <%=speed%> m/s.</h4>
+                <h4>Humidity = <%=Humidity%> %</h4>
+                <img src="<%= url %>" alt="">
+            <% } %>
+        <% }else{ %>
+            <h2>City Not Found</h2>
+        <% } %>
+    </div>
+
+    <form action="/" method="post">
+        <input type="text" name="city" placeholder="City Name">
+        <button type="submit">Submit</button>
+    </form>
+    <footer>
+        <p>Copyrights &#169; 2022 Bharat Bardiya</p>
+    </footer>
+</body>
+</html>

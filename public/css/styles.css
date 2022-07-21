@@ -1,0 +1,77 @@
+body{
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #e4e9fd 50%);
+    min-height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#heading{
+    text-align: center;
+    background-color: rgb(223, 101, 225, 0.5);
+    margin: 30px auto;
+    width: 50%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.data{
+    background-color: rgb(75, 255, 255);
+    border-radius: 12px;
+    margin: 30px auto;
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data > h2{
+    margin-top: 39px;
+}
+.data >h4{
+    margin: 15px;
+}
+form{
+    padding: 15px;
+    background-color: rgb(75, 255, 255);
+    margin: 50px auto 20px auto ;
+    border-radius: 15px;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+form >input{
+    font-size: large;
+    width: 160px;
+    margin: 5px;
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(75, 255, 255);
+    border-bottom: 2px solid rgb(79, 78, 85);
+    text-align: center;
+    padding: 5px;
+}
+
+form > button{
+    margin: 20px;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(102, 255, 79);
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(44, 40, 40);
+    color: white;
+}
+footer{
+    margin-top: 100px;
+    text-align: center;
+
+}
