@@ -28,6 +28,10 @@ body{
 }
 .data > h2{
     margin-top: 39px;
+    text-align: center;
+}
+.data >h4 {
+    text-align: center;
 }
 .data >h4{
     margin: 15px;
